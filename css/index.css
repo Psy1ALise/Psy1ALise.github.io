@@ -13,11 +13,11 @@ body{
 }
 
 #index{
-    padding:2%
+    padding:5%
 }
 
 #top{
-    padding:2%
+    padding:5%
 }
 
 .yifan-ni{
@@ -59,6 +59,12 @@ body{
 .hypertext{
     padding: 2%;
     font-size: 1.75em;
+    color: #0000FF;
+    margin: auto;
+}
+.hypertext{
+    padding: 2%;
+    font-size: 1em;
     color: #0000FF;
     margin: auto;
 }
