@@ -1,88 +1,73 @@
 body{
     height: 100%;
     width: auto;
-    background-color: #dee2a1d2 !important;
+    background-color: #000000 !important;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#aboutme{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    padding:5%
-}
+#headings{
 
-#index{
-    padding:5%
-}
-
-#top{
-    padding:5%
-}
-
-.yifan-ni{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    max-width: 50%;
-    height: auto;
-    margin: auto;
-    padding: 0%;
-    border-radius: 0%;
-}
-.students{
-    margin: auto;
-}
-
-.about{
-    width:100%;
-}
-
-
-.title{
     text-align: center;
     display: inline-block;
-    font-size: 2em;
-    color: #000000;
+    font-size: 1.2em;
+    color: #ffffff;
     margin: auto;
+    padding:0%
 }
 
-
-.text{
-    padding: 2%;
-    font-size: 1.75em;
-    color: #000000;
-    margin: auto;
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+    left: 50%;
+    text-align: center;
 }
 
-.hypertext{
-    padding: 2%;
-    font-size: 1.75em;
-    color: #0000FF;
-    margin: auto;
-}
-.hypertextabout{
-    font-size: 1em;
-    color: #0000FF;
-    margin: auto;
+.navbar a:hover{
+    background-color:rgb(172, 172, 172);
 }
 
 .yifan-ni-photo{
     margin: auto;
-    max-width: 30%;
+    max-width: 25%;
     height: auto;
-    border-radius: 20%;
-    padding:2%
+    border-radius: 25%;
+    padding:5%
 }
 
-
-.prev{
-    float: left;
+.yifan{
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    color: #ffffff;
     margin: auto;
 }
 
-.next{
-    float: right;
+.title{
+    text-align: left;
+    display: block;
+    font-size: 2em;
+    color: #ffffff;
     margin: auto;
 }
+
+
+.yifan-ni-about{
+    padding:5%;
+    text-align: left;
+    width:70%;
+}
+
+.userforms{
+    margin: auto;
+    width: 100%;
+    border-radius: 10%;
+    padding: 3%;
+}
+
+
+.button{
+    color: rgb(56, 56, 56);
+    border-radius: 5%;
+    cursor: pointer;  
+}
+
