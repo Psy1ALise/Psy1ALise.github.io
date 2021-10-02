@@ -4,7 +4,7 @@
         <title>Contact Me</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/contactMe.css" />
         <link type="text/css" rel="stylesheet" href="/lib/bootstrap-5.1.1/css/bootstrap.min.css" />
         <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
         <script type="text/javascript">
@@ -17,7 +17,7 @@
     </head>
 
     <body id="headings"> 
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav">
@@ -28,7 +28,7 @@
                             <a class="nav-link" href="/pages/aboutMe.html">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://mattm401.github.io/">Course</a>
+                            <a class="nav-link" href="https://mattm401.github.io/">Course Webpage</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://pang17.github.io/">Next Student</a>
@@ -43,26 +43,37 @@
                 </div>
             </div>
         </nav>
-        <div class = "userforms">
-            <form>
-                <input type = "text" id = "lastname" name = "usrLName" placeholder = "Last name">
-                <div id = "lastNamePrompt" style = "color:#FF0000;display:none">Please Enter Your Last Name.</div><br/>
-                
-                <input type = "text" id = "firstname" name = "usrFName" placeholder = "First name">
-                <div id = "firstNamePrompt" style = "color:#FF0000;display:none">Please Enter Your First Name.</div><br/>
-                
-                <input type = "text" id = "email" name = "usrEmail" placeholder = "Email">
-                <div id = "emailPrompt" style = "color:#FF0000;display:none">Please Enter a Valid Email Address.</div><br/>
-                
-                <input type = "text" id = "phone" name = "usrPhone" placeholder = "Phone Number">
-                <div id = "phonePrompt" style = "color:#FF0000;display:none">Please Enter a Valid Phone Number.</div><br/>
-                
-                <textarea id = "msg" name = "usrMsg" placeholder = "Type Your Message" style = "height:150px"></textarea>
-                <div id = "messagePrompt" style = "color:#FF0000;display:none">Please Enter Your Message.</div><br/>
-                
-                <button type="button" class = "buttonn" onclick="usrForm()">Submit</button>
-                <div id = "sucessPrompt" style = "color:#20e64e;display:none">You Have Succesfully Sent Your Email.</div><br/>
-            </form>
-        </div>
+        <div class="contact">
+            <h1 class="title">Contact Me</h1>
+            <p class = "text-block">
+                Complete the following form to contact me. In this page you need to enter your lastname, firstname, email, phone and your message in order to send a email to me. Please do not leave any blanks.For emails and phone numbers please enter the correct form(xxx@yyy.zzz and 1234567890).
+            </p>
+            <div class="container">
+                <form action="">
+                    <div class = "form-group">
+                        <label for = "lastName">Last Name</label>
+                        <input type="text" id = "lastName" name = "lastName">
+                    </div>
+                    <div class = "form-group">
+                        <label for = "firstName">First Name</label>
+                        <input type="text" id = "firstName" name = "firstName">
+                    </div>
+                    <div class = "form-group">
+                        <label for = "email">Email</label>
+                        <input type="text" id = "email" name = "email">
+                    </div>
+                    <div class = "form-group">
+                        <label for = "phoneNumber">Phone Number</label>
+                        <input type="text" id = "phoneNumber" name = "phoneNumber">
+                    </div>
+                    <div class = "form-group">
+                        <label for = "message">Message</label>
+                        <textarea name = "message" id = "message" cols = "30" rows = "5"> </textarea>
+                    </div>
+                    <button type = "submit">Submit</button>
+                </form>
+            </div>  
+            <div id="status">Sucess</div>
+        </div>  
     </body>
 </html>

@@ -26,48 +26,21 @@ body{
     background-color:rgb(172, 172, 172);
 }
 
-.yifan-ni-photo{
-    margin: auto;
-    max-width: 25%;
-    height: auto;
-    border-radius: 25%;
-    padding:5%
-}
-
-.yifan{
-    text-align: center;
-    display: block;
-    font-size: 2em;
-    color: #ffffff;
-    margin: auto;
-}
-
 .title{
     text-align: left;
     display: block;
     font-size: 2em;
     color: #ffffff;
     margin: auto;
+    padding-left: 5%;
+    padding-top:5%;
 }
 
 
-.yifan-ni-about{
-    padding:5%;
+.text-block{
+    padding-left:5%;
+    padding-top:1%;
     text-align: left;
     width:70%;
+    margin:auto;
 }
-
-.userforms{
-    margin: auto;
-    width: 100%;
-    border-radius: 10%;
-    padding: 3%;
-}
-
-
-.button{
-    color: rgb(56, 56, 56);
-    border-radius: 5%;
-    cursor: pointer;  
-}
-
