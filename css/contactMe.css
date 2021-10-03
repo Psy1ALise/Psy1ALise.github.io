@@ -56,7 +56,7 @@ body{
     background-color: rgb(20, 26, 31);
 }
 
-.form-group{
+.field{
     width:100%;
     margin-top:1%;
     font-size:1em;
@@ -73,24 +73,15 @@ textarea{
     resize:vertical;
 }
 
-input[type="submit"] {
+input[type="submit"]{
     display: block;
     padding: 10px 30px;
     font-size: 14px;
     background-color: #4460AA;
-    color: #fff;
+    color: #ffffff;
     border: none;
 }
 input[type="submit"]:hover{
     background-color: #7e92ca;
 }
 
-
-#status{
-    width:30px;
-    padding-left: 10%;
-    text-align: left;
-    padding-top:1%;
-    color:rgb(105, 253, 46);
-    display:none;
-}

@@ -1,20 +1,13 @@
-const btn = document.getElementById('button');
-
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
-
-   btn.value = 'Sending...';
-
-   const serviceID = 'default_service';
-   const templateID = 'template_agodqhj';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Submit';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Submit';
-      alert(JSON.stringify(err));
-    });
-});
+window.onload = function() {
+  document.getElementById('form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      emailjs.sendForm('service_g0acgqq', 'template_agodqhj', this)
+          .then(function() {
+              console.log('Email Sucessfully Sent.');
+          }, function(error) {
+              console.log('Failed to Send Email', error);
+          });
+          window.alert("Email Sucessfully Sent."); 
+          document.getElementById("form").reset();
+  });
+}

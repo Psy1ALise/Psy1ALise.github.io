@@ -7,15 +7,13 @@
         <link rel="stylesheet" href="/css/contactMe.css"/>
         <link type="text/css" rel="stylesheet" href="/lib/bootstrap-5.1.1/css/bootstrap.min.css"/>
         <script src="/js/contactMe.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-        <script type="text/javascript">
+        <script type = "text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script type = "text/javascript"> 
         (function() {
-            emailjs.init("user_BfRnTtPyncrKlHr2PRCWI");
+        emailjs.init("user_BfRnTtPyncrKlHr2PRCWI");
         })();
         </script>       
-        <script src="/lib/jquery-3.6.0.js"></script>
     </head>
-
     <body id="headings"> 
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <div class="container-fluid">
@@ -52,28 +50,29 @@
                 <form id="form">
                     <div class="field">
                         <label for="user_lname">Last Name</label>
-                        <input type="text" name="user_lname" id="user_lname">
-                      </div>
+                        <input type="text" name="user_lname" id="user_lname" required>
+                    </div>
                     <div class="field">
                       <label for="user_fname">First Name</label>
-                      <input type="text" name="user_fname" id="user_fname">
+                      <input type="text" name="user_fname" id="user_fname" required>
                     </div>
                     <div class="field">
                       <label for="user_email">Email</label>
-                      <input type="text" name="user_email" id="user_email">
+                      <input type="text" name="user_email" id="user_email" required>
                     </div>
                     <div class="field">
                       <label for="user_phone">Phone Number</label>
-                      <input type="text" name="user_phone" id="user_phone">
+                      <input type="text" name="user_phone" id="user_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{3}[0-9]{3}[0-9]{4}" required>
                     </div>
                     <div class="field">
                       <label for="user_message">Message</label>
-                      <textarea type="text" name="user_message" id="user_message"></textarea>
+                      <textarea type="text" name="user_message" id="user_message" required></textarea>
                     </div>
-                    <input type="submit" id="button" value="Submit" >
-                  </form>
+                    <div class="field">
+                        <input type="submit" id="submit" value="Submit">
+                    </div>   
+                </form>
             </div>  
-            <div id="status">Success</div>
         </div>  
     </body>
 </html>
