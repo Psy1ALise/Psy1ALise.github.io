@@ -27,10 +27,10 @@ body{
 }
 
 .contact{
-    justify-content: left;
-    align-items: center;
+    justify-content:left;
+    align-items:center;
+    flex-direction:column;
 }
-
 .title{
     text-align: left;
     display: block;
@@ -61,8 +61,8 @@ body{
     margin-top:1%;
     font-size:1em;
 }
-.form-group input,
-.form-group textarea{
+.field input,
+.field textarea{
     width:100%;
     padding:5px;
     font-size:0.7em;
@@ -73,15 +73,20 @@ textarea{
     resize:vertical;
 }
 
-button[type = "submit"]{
-    width:  30;
-    padding:1%;
-    font-size: 1.2em;
-    border:none;
-    border-radius: 10px;
+input[type="submit"] {
+    display: block;
+    padding: 10px 30px;
+    font-size: 14px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none;
 }
 
-button[type = "submit"]:hover{
-    background-color: rgb(83, 160, 112);
-    color: white;
+#status{
+    width:30px;
+    padding-left: 10%;
+    text-align: left;
+    padding-top:1%;
+    color:rgb(105, 253, 46);
+    display:none;
 }
