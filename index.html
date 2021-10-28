@@ -10,7 +10,7 @@
     </head>
 
     <body id="headings"> 
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light cur-nav">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav">
@@ -18,27 +18,62 @@
                             <a class="nav-link" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/aboutMe.html">About Me</a>
+                            <a class="nav-link" href="/pages/aboutMe.html">More About Me</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://mattm401.github.io/">Course Webpage</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://pang17.github.io/">Next Student</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://joshualyon7.github.io/">Previous Student</a>
+                        <li class="nav-item dropdown-controller">
+                            <a class="nav-link">Class Links</a>
+                            <div class='nav-dropdown'>
+                                <ul>
+                                    <li class="dropdown-items">
+                                        <a class="nav-link" href="https://mattm401.github.io/">Course Webpage</a>
+                                    </li>
+                                    <li class="dropdown-items">
+                                        <a class="nav-link" href="https://pang17.github.io/">Next Student</a>
+                                    </li>
+                                    <li class="dropdown-items">
+                                        <a class="nav-link" href="https://joshualyon7.github.io/">Previous Student</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/pages/contactMe.html">Contact Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/assets/Yifan_Ni_Resume.pdf" target="_blank">My Resume</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="misc">
-            <img src="/picture/YifanNi.png" alt="Yifan Ni" class="photo">
+            <img src="/assets/YifanNi.jpg" alt="Yifan Ni" class="photo">
             <h1 class="yifan" id = "name">Yifan Ni</h1>
+            <div class = "self-introduction">
+                <p class='text-block'>
+                    Hello I am Yifan Ni, a senior studying in UD. I used to be in Chemistry department. Now I am studying Computer Science and concentrate in Cybersecurity. I am a guy who combined with different attributes. I love to embrace new stuffs and make new friends. Feel free to talk to me.
+                </p>
+                <ul class='text-block'>
+                    <li>College skill programming</li>
+                    <li>Fluent in both Chinese and English, conversational in Japanese</li>
+                </ul>
+            </div>
         </div> 
+        <div class="container-fluid" style="background-color: grey">
+            <div class = "footer-container">
+                <div class="footer-title">
+                    <h1 class="footer-title">Pefsonal Info</h1>
+                </div>
+                <div class="footer-text">
+                    Github@Psy1ALise
+                </div>
+                <div class = "footer-text">
+                    samnyf@udel.edu
+                </div>
+                <div class = "footer-text">
+                    3022299917
+                </div>
+            </div>
+        </div>
     </body>
 </html>

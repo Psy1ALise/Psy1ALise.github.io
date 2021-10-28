@@ -15,7 +15,7 @@
         </script>       
     </head>
     <body id="headings"> 
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light cur-nav">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav">
@@ -23,16 +23,23 @@
                             <a class="nav-link" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/aboutMe.html">About Me</a>
+                            <a class="nav-link" href="/pages/aboutMe.html">More About Me</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://mattm401.github.io/">Course Webpage</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://pang17.github.io/">Next Student</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://joshualyon7.github.io/">Previous Student</a>
+                        <li class="nav-item dropdown-controller">
+                            <a class="nav-link">Class Links</a>
+                            <div class='nav-dropdown'>
+                                <ul>
+                                    <li class="dropdown-items">
+                                        <a class="nav-link" href="https://mattm401.github.io/">Course Webpage</a>
+                                    </li>
+                                    <li class="dropdown-items">
+                                        <a class="nav-link" href="https://pang17.github.io/">Next Student</a>
+                                    </li>
+                                    <li class="dropdown-items">
+                                        <a class="nav-link" href="https://joshualyon7.github.io/">Previous Student</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/pages/contactMe.html">Contact Me</a>
@@ -42,11 +49,13 @@
             </div>
         </nav>
         <div class="contact">
-            <h1 class="title">Contact Me</h1>
-            <p class = "text-block">
-                Complete the following form to contact me. In this page you need to enter your lastname, firstname, email, phone and your message in order to send a email to me. Please do not leave any blanks.For emails and phone numbers please enter the correct form(xxx@yyy.zzz and 1234567890).
-            </p>
-            <div class="container">
+            <div class='title-container'>
+                <h1 class="title">Contact Me</h1>
+                <p class = "text-block">
+                    Complete the following form to contact me.
+                </p>
+            </div>
+            <div class="form-container">
                 <form id="form">
                     <div class="field">
                         <label for="user_lname">Last Name</label>
