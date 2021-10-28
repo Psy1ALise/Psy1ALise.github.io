@@ -57,6 +57,10 @@ body{
     font-size: 100%;
 }
 
+.my-image{
+    padding:2.5%
+}
+
 .photo{
     position:relative;
     margin: auto;
@@ -75,14 +79,44 @@ body{
 }
 
 .text-block{
-    padding-left:5%;
     padding-top:1%;
+    padding-bottom:1%;
     text-align: left;
-    width:50%;
+    width:40%;
     min-width:300px;
     margin:auto;
 }
-.text-block li{
-    list-style:none;
+.title{
+    padding-top:1%;
+    text-align: left;
+    width:40%;
+    min-width:300px;
+    margin:auto;
+    font-size:1.5em;
 }
 
+.footer-container{
+    background-color: #14033a;
+    width:40%;
+    margin:auto;
+}
+
+.footer-text{
+    display:inline-block;
+    font-size:0.7em;
+    margin-right:7%;
+
+}
+
+.footer-text a{
+    color:#ffffff;
+    text-decoration: none;
+}
+.footer-text a:hover{
+    color:gray;
+}
+
+#footer-title{
+    margin-left:7%;
+    font-size:1.5em;
+}

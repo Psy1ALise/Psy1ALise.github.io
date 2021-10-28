@@ -7,6 +7,14 @@
         <link rel="stylesheet" href="/css/index.css" />
         <link type="text/css" rel="stylesheet" href="/lib/bootstrap-5.1.1/css/bootstrap.min.css" />
         <script src="/lib/jquery-3.6.0.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4DLSGLG1L"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-H4DLSGLG1L');
+        </script>
     </head>
 
     <body id="headings"> 
@@ -47,33 +55,37 @@
             </div>
         </nav>
         <div class="misc">
-            <img src="/assets/YifanNi.jpg" alt="Yifan Ni" class="photo">
+            <div class="my-image">
+                <img src="/assets/YifanNi.jpg" alt="Yifan Ni" class="photo">
+            </div>
             <h1 class="yifan" id = "name">Yifan Ni</h1>
             <div class = "self-introduction">
                 <p class='text-block'>
-                    Hello I am Yifan Ni, a senior studying in UD. I used to be in Chemistry department. Now I am studying Computer Science and concentrate in Cybersecurity. I am a guy who combined with different attributes. I love to embrace new stuffs and make new friends. Feel free to talk to me.
+                    Hello I am Yifan Ni, a senior in UD, ex-chemist, now studying Computer Science and concentrate in Cybersecurity. I love to embrace new stuffs and make new friends. Feel free to talk to me.
                 </p>
+                <h1 class="title">Experiences</h1>
                 <ul class='text-block'>
-                    <li>College skill programming</li>
-                    <li>Fluent in both Chinese and English, conversational in Japanese</li>
+                    <li>Microbot Project (WIP)
+                        <p>A image processing project for detecting bot in microns under microscope.</p>
+                    </li>
+                    <li>Beatmaker (WIP)
+                        <p>A beat maker that allow user to build its own loop of beat.</p>
+                    </li>
+                    <li>iOS Program Reverse Engineering
+                        <p>Using Frida tools on a jailed breaked iOS device to dump the unencrypted program files and use IDA tools to read and modify the assembly to achieve reverse engineering.</p>
+                    </li>
                 </ul>
             </div>
         </div> 
-        <div class="container-fluid" style="background-color: grey">
-            <div class = "footer-container">
-                <div class="footer-title">
-                    <h1 class="footer-title">Pefsonal Info</h1>
-                </div>
-                <div class="footer-text">
-                    Github@Psy1ALise
-                </div>
-                <div class = "footer-text">
-                    samnyf@udel.edu
-                </div>
-                <div class = "footer-text">
-                    3022299917
-                </div>
+        <div class = "footer-container">
+            <div class="footer-text" id="footer-title">Find Me</div>
+            <div class="footer-text" id="my-github-address">
+                <a href="https://github.com/Psy1ALise">Github@Psy1ALise</a>
             </div>
+            <div class = "footer-text" id="my-email-address">
+                <a href="mailto:samnyf@udel.edu">samnyf@udel.edu</a>
+            </div>
+            <div class = "footer-text" id="my-phone-number">3022299917</div>
         </div>
     </body>
 </html>

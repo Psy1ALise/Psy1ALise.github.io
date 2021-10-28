@@ -52,7 +52,6 @@ body{
     position: relative;
     width: 100% !important;
     margin-left: 0;
-    /* background-color: red; */
     text-align: left;
     font-size: 100%;
 }
@@ -63,15 +62,41 @@ body{
     font-size: 2em;
     color: #ffffff;
     margin: auto;
-    padding-left: 5%;
-    padding-top:5%;
+    width:40%;
+    padding-top:2%;
 }
 
 
 .text-block{
-    padding-left:5%;
     padding-top:1%;
+    padding-bottom:1%;
     text-align: left;
-    width:70%;
+    width:40%;
     margin:auto;
+}
+
+.footer-container{
+    background-color: #14033a;
+    width:40%;
+    margin:auto;
+}
+
+.footer-text{
+    display:inline-block;
+    font-size:0.7em;
+    margin-right:7%;
+
+}
+
+.footer-text a{
+    color:#ffffff;
+    text-decoration: none;
+}
+.footer-text a:hover{
+    color:gray;
+}
+
+#footer-title{
+    margin-left:7%;
+    font-size:1.5em;
 }
